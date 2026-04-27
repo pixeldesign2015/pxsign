@@ -1,14 +1,13 @@
 import { type MessageDescriptor, i18n } from '@lingui/core';
-
 import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 
 export const appMetaTags = (title?: MessageDescriptor) => {
   const description =
-    'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'PxSign by Pixel Design — a fast, secure, and beautiful document signing platform. Send documents for signature, create templates, and integrate with your favorite tools.';
 
   return [
     {
-      title: title ? `${i18n._(title)} - Documenso` : 'Documenso',
+      title: title ? `${i18n._(title)} - PxSign` : 'PxSign by Pixel Design',
     },
     {
       name: 'description',
@@ -17,11 +16,11 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'keywords',
       content:
-        'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'PxSign, Pixel Design, document signing, eSignature, DocuSign alternative, open source signing, digital signatures',
     },
     {
       name: 'author',
-      content: 'Documenso, Inc.',
+      content: 'Pixel Design Inc.',
     },
     {
       name: 'robots',
@@ -29,7 +28,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       property: 'og:title',
-      content: 'Documenso - The Open Source DocuSign Alternative',
+      content: 'PxSign - Document Signing by Pixel Design',
     },
     {
       property: 'og:description',
@@ -49,7 +48,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       name: 'twitter:site',
-      content: '@documenso',
+      content: '@pixeldesign',
     },
     {
       name: 'twitter:description',
