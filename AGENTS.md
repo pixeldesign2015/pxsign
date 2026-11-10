@@ -2,14 +2,9 @@
 
 ## Build/Test/Lint Commands
 
-- `npm run build` - Build all packages
-- `npm run lint` - Lint all packages
-- `npm run lint:fix` - Auto-fix linting issues
-- `npm run test:e2e` - Run E2E tests with Playwright
+- `npm run test:e2e -w @documenso/app-tests` - Run E2E tests with Playwright
 - `npm run test:dev -w @documenso/app-tests` - Run single E2E test in dev mode
 - `npm run test-ui:dev -w @documenso/app-tests` - Run E2E tests with UI
-- `npm run format` - Format code with Prettier
-- `npm run dev` - Start development server for Remix app
 
 **Important:** Do not run `npm run build` to verify changes unless explicitly asked. Builds take a long time (~2 minutes). Use `npx tsc --noEmit` for type checking specific packages if needed.
 
@@ -28,7 +23,7 @@
 ## Error Handling & Validation
 
 - Use custom AppError class when throwing errors
-- When catching errors on the frontend use `const error = AppError.parse(error)` to get the error code
+- When catching errors on the frontend use `const error = AppError.parseError(err)` to get the error code
 - Use early returns and guard clauses
 - Use Zod for form validation and react-hook-form for forms
 - Use error boundaries for unexpected errors
